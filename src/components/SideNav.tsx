@@ -23,13 +23,13 @@ const navSections = [
   {
     group: "PERSONAL INTERESTS",
     items: [
+      { label: "Josh's Updates", href: "/deep-thoughts", accent: "#9a8050" },
+      { label: "Rankings Roundtable", href: "/tier-lists", accent: "#c0392b" },
       { label: "From Josh's Kitchen", href: "/cookbook", accent: "#f5c842" },
       { label: "Garden Patch", href: "/garden", accent: "#1d9e75" },
-      { label: "Man's Best Friends", href: "/pets", accent: "#c8a84b" },
       { label: "The Game Room", href: "/games", accent: "#1e5c8a" },
-      { label: "Rankings Roundtable", href: "/tier-lists", accent: "#c0392b" },
       { label: "The Reading Nook", href: "/writing", accent: "#e8d5a0" },
-      { label: "Josh's Updates", href: "/deep-thoughts", accent: "#9a8050" },
+      { label: "Man's Best Friends", href: "/pets", accent: "#c8a84b" },
       { label: "The Dream", href: "/homestead", accent: "#1d9e75" },
     ],
   },
