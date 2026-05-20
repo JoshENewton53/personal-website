@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&family=Oswald:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gold: #f5c842;
+  --brass: #c8a84b;
+  --parchment: #e8d5a0;
+  --midnight: #1a1208;
+  --oak: #3d2a0a;
+  --on-air-red: #c0392b;
+  --phosphor: #1d9e75;
+  --signal-blue: #1e5c8a;
+  --dark-wood: #2a1a08;
+  --light-oak: #8b5a20;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--midnight);
+  color: var(--parchment);
+  font-family: 'Special Elite', monospace;
+}
+
+/* Scanline overlay on every page */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 3px,
+    rgba(0, 0, 0, 0.08) 3px,
+    rgba(0, 0, 0, 0.08) 4px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+@layer components {
+  .retro-border {
+    @apply border border-brass/40 rounded;
+  }
+
+  .retro-section-title {
+    font-family: 'Oswald', sans-serif;
+    @apply text-xs tracking-[5px] uppercase text-brass/70 border-b border-brass/20 pb-2 mb-4;
+  }
+
+  .retro-card {
+    @apply bg-dark-wood border border-brass/30 rounded-lg p-4 hover:border-brass/60 transition-colors;
+  }
+
+  .retro-btn {
+    font-family: 'Oswald', sans-serif;
+    @apply px-4 py-2 border border-brass text-brass text-sm tracking-widest uppercase
+           hover:bg-brass hover:text-midnight transition-colors rounded;
+  }
+
+  .retro-btn-red {
+    font-family: 'Oswald', sans-serif;
+    @apply px-4 py-2 border border-on-air text-on-air text-sm tracking-widest uppercase
+           hover:bg-on-air hover:text-white transition-colors rounded;
+  }
+
+  .gold-text {
+    @apply text-gold;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .deco-line {
+    @apply inline-block w-12 h-px bg-brass/40 align-middle;
+  }
+
+  /* Ticker animation */
+  @keyframes ticker-scroll {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+  .ticker-animate {
+    animation: ticker-scroll 30s linear infinite;
+  }
+
+  .ticker-loop {
+    animation: ticker-scroll 40s linear infinite;
+  }
+
+  .ticker-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+  }
+
+  .nav-group-label {
+    font-family: 'Oswald', sans-serif;
+    font-size: 9px;
+    letter-spacing: 3px;
+  }
+
+  .nav-link-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+  }
+
+  .station-name {
+    font-family: 'Oswald', sans-serif;
+  }
+
+  .hero-vignette {
+    background: radial-gradient(ellipse 80% 80% at 50% 50%, transparent 30%, rgba(10,5,0,0.5) 100%);
+  }
+
+  .hero-heading {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(1.8rem, 4.5vw, 3.5rem);
+    letter-spacing: 6px;
+    white-space: nowrap;
+  }
+
+  .hero-heading-name {
+    color: var(--gold);
+    text-shadow: 0 0 40px #f5c84244;
+  }
+
+  .deco-line-left {
+    display: inline-block;
+    width: 4rem;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #c8a84b66);
+  }
+
+  .deco-line-right {
+    display: inline-block;
+    width: 4rem;
+    height: 1px;
+    background: linear-gradient(to left, transparent, #c8a84b66);
+  }
+
+  .coming-soon-heading {
+    font-family: 'Oswald', sans-serif;
+    font-size: clamp(2.5rem, 7vw, 4.5rem);
+    letter-spacing: 6px;
+    color: var(--phosphor);
+    text-shadow: 0 0 40px #1d9e7555;
+  }
+
+  .phosphor-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--phosphor);
+    box-shadow: 0 0 8px var(--phosphor);
+    animation: glow-pulse 1.5s ease-in-out infinite;
+  }
+  .phosphor-dot:nth-child(2) { animation-delay: 0.3s; }
+  .phosphor-dot:nth-child(3) { animation-delay: 0.6s; }
+
+  .progress-bar-fill {
+    height: 100%;
+    width: 50%;
+    border-radius: 9999px;
+    background: linear-gradient(90deg, var(--phosphor), var(--gold));
+    animation: ticker-scroll 3s ease-in-out infinite alternate;
+  }
+
+  .coming-soon-sub {
+    font-family: 'Oswald', sans-serif;
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: rgba(200, 168, 75, 0.4);
+  }
+
+  /* VU meter animation */
+  @keyframes vu-pulse {
+    from { height: var(--lo, 20%); }
+    to { height: var(--hi, 80%); }
+  }
+
+  /* Glow pulse */
+  @keyframes glow-pulse {
+    0%, 100% { filter: drop-shadow(0 0 6px #f5c84266); }
+    50% { filter: drop-shadow(0 0 18px #f5c842aa); }
+  }
+
+  .glow-pulse {
+    animation: glow-pulse 4s ease-in-out infinite;
+  }
+
+  /* ON AIR flicker */
+  @keyframes on-air-flicker {
+    0%, 100% { box-shadow: 0 0 16px #c0392b88, 0 0 32px #c0392b44; }
+    50% { box-shadow: 0 0 24px #c0392baa, 0 0 48px #c0392b66; }
+  }
+
+  .on-air-active {
+    animation: on-air-flicker 0.12s ease-in-out infinite;
+    background-color: var(--on-air-red) !important;
+  }
+}

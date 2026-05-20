@@ -1,0 +1,67 @@
+Items that must be present in my personal website 
+
+ 
+
+1. Home Page: A welcoming and visually appealing home page introducing myself professionally and personally. Brief bio, photo, and some recent projects, interests, achievements, or jobs 
+
+2. An easy to navigate side menu with links to the following sections: 
+
+   - About Me: A detailed biography, including my background, education, skills, and interests. 
+
+   - Portfolio: A showcase of my work, including projects, case studies, or a gallery of images related to my professional life and downloadable resume. 
+
+   - Blog: A section for sharing my thoughts, insights, and updates on topics relevant to my field or personal interests. 
+
+   - Contact: A page with a contact form, email address, and links to my social media profiles for visitors to reach out to me. Github, LinkedIn, Instagram, Facebook, etc 
+
+   - Josh's Cookbook: A collection of my favorite recipes, cooking tips, and food-related content, showcasing my passion for cooking and sharing culinary experiences with others. 
+
+   - Josh's Garden: A section dedicated to my gardening adventures, including tips, photos, and updates on my plants and gardening projects. 
+
+   - KBLW The Bellow: Upcoming Youtube channel themed around stranger things radio station WSQK going for a very retro vibe where I will talk about various topics from politics, pop culture, to niche topics I am interested in 
+
+      - I am the host instead of rockin robin ill be Jumpin Josh 
+
+      - Bellow: A shout you let out - proud of my topics and sharing them with the world. Also a tool used to blow air into a fire to make it burn brighter, which is what I hope to do with my content - ignite discussions and ideas. 
+
+   - Pets wall: A fun and engaging section featuring photos, stories, and updates about my pets, allowing visitors to connect with me on a more personal level. 
+
+   - Video games: A section dedicated to my favorite video games, including reviews, gameplay videos, and discussions about gaming culture and trends. 
+
+   - tier lists: A section where I create and share tier lists on various topics, such as soaps, movies, TV shows, video games, or any other subjects I'm passionate about, providing my opinions and insights in a fun and engaging way. 
+
+   - Writing/books: A section showcasing my writing projects, including articles, essays, or any published works, along with book recommendations and reviews. 
+
+   - Deep thoughts: Includes a job hunt counter (how many jobs I've applied to), A section where I share my philosophical musings, reflections on life, and any deep thoughts I want to express, allowing visitors to engage with my ideas and perspectives. 
+
+   - Homestead: My desire to some day live the homestead lifestyle even if that is just a dream for now.  
+
+ 
+
+3. Responsive Design: The website should be mobile-friendly and look good on all devices, including desktops, tablets, and smartphones. 
+
+5. Search Functionality: A search bar to help visitors find specific content on my website quickly and easily. 
+
+9. Analytics: Integration of website analytics to track visitor behavior, popular content, and overall website performance. 
+
+10. SEO Optimization: Implementing best practices for search engine optimization to improve the visibility of my website in search engine results. 
+
+14. Personal Branding: Consistent use of colors, fonts, and design elements that reflect my personal brand and style throughout the website. 
+
+   - I am going for a very retro 90s vibe featured in the html templates I have/ 
+
+   - Old timey radio station style 
+
+17. Security: Ensuring that my website is secure 
+
+18. Ability to integrate ads through google adsense or similar platforms to monetize my content and generate revenue from my website traffic. 
+
+19. Way for users to subscribe to a newsletter or mailing list to receive updates and news about my website and content. 
+
+    - I don't want it to be intrusive, it should just be a sing up button in the header or footer that leads to a simple sign up form where users can enter their email address to subscribe to my newsletter. I want to keep it simple and easy for users to subscribe without being pushy or overwhelming. 
+
+    - I don't have a newsletter yet but I want the ability to easily set one up in the future.  
+
+20. I will likely need a database to store user information, blog posts, portfolio items, and other dynamic content on my website. I want to ensure that the database is secure and can handle the expected traffic and data storage needs of my website.
+
+I want this website to also be a showcase of my web development skills, so I want to make sure that the code is clean, well-organized, and follows best practices for web development. I also want to ensure that the website is optimized for performance and loads quickly for visitors.
